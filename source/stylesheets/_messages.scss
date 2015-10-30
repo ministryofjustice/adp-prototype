@@ -1,4 +1,62 @@
 .messages {
-  border-top: 1px solid #ccc;
-  margin-top: -1px;
+  border: 2px solid $grey-2;
+  font-size: 1rem;
+
+  .messages-screen {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    max-height: 900px;
+    overflow: auto;
+
+    h3 {
+      margin: 10px;
+    }
+  }
+
+  .messages-message {
+    margin: 20px 30% 10px 0;
+
+    &.advocate {
+      margin-left: 30%;
+      margin-right: 0;
+
+      .message-body {
+        background: #a6c9f0;
+      }
+    }
+  }
+
+  .message-body {
+    background: $grey-3;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .message-meta {
+    overflow: hidden;
+    margin-top: .3em;
+    font-size: .9em;
+    color: $grey-1;
+
+    .message-author {
+      float: left;
+    }
+
+    .message-date {
+      float: right;
+    }
+  }
+
+  .messages-input {
+    margin: 0;
+    padding: 10px;
+    // border-top: 2px solid $grey-2;
+    background: $grey-2;
+
+    input {
+      width: 100%;
+      border-color: $grey-1;
+    }
+  }
 }

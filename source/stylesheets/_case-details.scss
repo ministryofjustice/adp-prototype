@@ -1,0 +1,25 @@
+.case-details {
+  border-left: 1px solid $grey-3;
+
+  .case-details-title {
+    margin: 35px 0 20px;
+  }
+}
+
+.case-details-item {
+  font-size: .9em;
+  margin: 0;
+
+  dt {
+    color: $grey-1;
+    font-weight: bold;
+  }
+
+  dd {
+    margin: 0 0 15px;
+  }
+
+  ul {
+    margin: 0;
+  }
+}

@@ -1,0 +1,133 @@
+[{
+  "id": 1,
+  "name": "Appeal against conviction",
+  "is_fixed_fee": true,
+  "created_at": "2015-10-28 12:23:01.305042",
+  "updated_at": "2015-10-28 12:23:01.305042",
+  "requires_cracked_dates": false,
+  "requires_trial_dates": false,
+  "allow_pcmh_fee_type": false,
+  "requires_maat_reference": true
+ },
+ {
+  "id": 2,
+  "name": "Appeal against sentence",
+  "is_fixed_fee": true,
+  "created_at": "2015-10-28 12:23:01.319680",
+  "updated_at": "2015-10-28 12:23:01.319680",
+  "requires_cracked_dates": false,
+  "requires_trial_dates": false,
+  "allow_pcmh_fee_type": false,
+  "requires_maat_reference": true
+ },
+ {
+  "id": 3,
+  "name": "Breach of Crown Court order",
+  "is_fixed_fee": true,
+  "created_at": "2015-10-28 12:23:01.326094",
+  "updated_at": "2015-10-28 12:23:01.326094",
+  "requires_cracked_dates": false,
+  "requires_trial_dates": false,
+  "allow_pcmh_fee_type": false,
+  "requires_maat_reference": false
+ },
+ {
+  "id": 4,
+  "name": "Committal for Sentence",
+  "is_fixed_fee": true,
+  "created_at": "2015-10-28 12:23:01.331924",
+  "updated_at": "2015-10-28 12:23:01.331924",
+  "requires_cracked_dates": false,
+  "requires_trial_dates": false,
+  "allow_pcmh_fee_type": false,
+  "requires_maat_reference": true
+ },
+ {
+  "id": 5,
+  "name": "Contempt",
+  "is_fixed_fee": true,
+  "created_at": "2015-10-28 12:23:01.337934",
+  "updated_at": "2015-10-28 12:23:01.337934",
+  "requires_cracked_dates": false,
+  "requires_trial_dates": false,
+  "allow_pcmh_fee_type": false,
+  "requires_maat_reference": true
+ },
+ {
+  "id": 6,
+  "name": "Cracked Trial",
+  "is_fixed_fee": false,
+  "created_at": "2015-10-28 12:23:01.343574",
+  "updated_at": "2015-10-28 12:23:01.343574",
+  "requires_cracked_dates": true,
+  "requires_trial_dates": false,
+  "allow_pcmh_fee_type": true,
+  "requires_maat_reference": true
+ },
+ {
+  "id": 7,
+  "name": "Cracked before retrial",
+  "is_fixed_fee": false,
+  "created_at": "2015-10-28 12:23:01.349991",
+  "updated_at": "2015-10-28 12:23:01.349991",
+  "requires_cracked_dates": true,
+  "requires_trial_dates": false,
+  "allow_pcmh_fee_type": true,
+  "requires_maat_reference": true
+ },
+ {
+  "id": 8,
+  "name": "Discontinuance",
+  "is_fixed_fee": false,
+  "created_at": "2015-10-28 12:23:01.356042",
+  "updated_at": "2015-10-28 12:23:01.356042",
+  "requires_cracked_dates": false,
+  "requires_trial_dates": true,
+  "allow_pcmh_fee_type": true,
+  "requires_maat_reference": true
+ },
+ {
+  "id": 9,
+  "name": "Elected cases not proceeded",
+  "is_fixed_fee": true,
+  "created_at": "2015-10-28 12:23:01.361844",
+  "updated_at": "2015-10-28 12:23:01.361844",
+  "requires_cracked_dates": false,
+  "requires_trial_dates": false,
+  "allow_pcmh_fee_type": false,
+  "requires_maat_reference": true
+ },
+ {
+  "id": 10,
+  "name": "Guilty plea",
+  "is_fixed_fee": false,
+  "created_at": "2015-10-28 12:23:01.374794",
+  "updated_at": "2015-10-28 12:23:01.374794",
+  "requires_cracked_dates": false,
+  "requires_trial_dates": true,
+  "allow_pcmh_fee_type": true,
+  "requires_maat_reference": true
+ },
+ {
+  "id": 11,
+  "name": "Retrial",
+  "is_fixed_fee": false,
+  "created_at": "2015-10-28 12:23:01.380211",
+  "updated_at": "2015-10-28 12:23:01.380211",
+  "requires_cracked_dates": false,
+  "requires_trial_dates": true,
+  "allow_pcmh_fee_type": true,
+  "requires_maat_reference": true
+ },
+ {
+  "id": 12,
+  "name": "Trial",
+  "is_fixed_fee": false,
+  "created_at": "2015-10-28 12:23:01.385097",
+  "updated_at": "2015-10-28 12:23:01.385097",
+  "requires_cracked_dates": false,
+  "requires_trial_dates": true,
+  "allow_pcmh_fee_type": true,
+  "requires_maat_reference": true
+ }
+]

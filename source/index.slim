@@ -26,9 +26,8 @@ section: claims
         button.button.upload type="submit" Upload
 
 form.toolbar
-  .form-group
-    input.form-control> placeholder="e.g. defendant name, advocate name"
-    button.button.button-secondary Search
+  input.form-control> placeholder="e.g. defendant name, advocate name"
+  button.button.button-secondary Search
 
 .cases
   table
@@ -43,13 +42,17 @@ form.toolbar
         th Messages
     tbody
       - data.cases.reverse.each do |c|
+        - defendants = get_defendants(c.id)
         tr
           td = link_to c.case_number, "/claims/#{c.id}.html"
-          td = get_defendants(c.id).join(',<br>')
+          td
+            => defendants[0...2].join(',<br>')
+            - if defendants.count > 2
+              .more = link_to "and #{defendants.count - 2} more"
           td = number_to_currency(c.total + c.vat_amount, unit: '£')
           - amount_assessed = match_from_collection(c.id, :claim_id, data.determinations).first.total
           td =  amount_assessed > 0 ? number_to_currency(amount_assessed, unit: '£') : '—'
-          td = c.state.humanize
+          td: span.case-status class="#{c.state}" = c.state.humanize
           td = c.original_submission_date ? DateTime.parse(c.original_submission_date).strftime('%d/%m/%Y') : '—'
           td.case-messages
             - messages = match_from_collection(c.id, :claim_id, data.messages)

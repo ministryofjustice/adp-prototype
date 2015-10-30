@@ -6,48 +6,78 @@ section: claim
 
 .summary
   .grid-row.claim
-    .column-third
+    .column-half
       .summary-block
         dt Case number
-        dd.summary-block-title = claim.case_number
-      .summary-block
-        dt Offence
-        dd = match_from_collection(claim.offence_id, :id, data.offences).first.description
-
-    .column-third
-      dl.summary-block
-        - defendants = get_defendants(claim.id)
-        dt = defendants.count > 1 ? 'Defendants' : 'Defantant'
         dd
-          ul
-            - defendants.each do |d|
-              li = d
-      dl.summary-block
-        dt Court
-        dd = match_from_collection(claim.court_id, :id, data.courts).first.name
-
-    .column-third
-      dl.summary-block
-        dt Status
-        dd
+          span.summary-block-title = claim.case_number
           span.case-status class="#{claim.state}" = claim.state.humanize
+
+    .column-half
+      dl.summary-block.column-half
+        dt Amount claimed
+        dd = number_to_currency(claim.total + claim.vat_amount, unit: '£')
+
+      - amount_assessed = match_from_collection(claim.id, :claim_id, data.determinations).first.total
+      dl.summary-block.column-half
+        dt Amount assessed
+        dd =  amount_assessed > 0 ? number_to_currency(amount_assessed, unit: '£') : '—'
+
       - if claim.original_submission_date
-        dl.summary-block
-          dt Case submitted
-          dd
-            span = DateTime.parse(claim.original_submission_date).strftime('%d/%m/%Y, %H:%M')
+        dl.summary-block.column-half
 
 
-.local-nav
-  ul.tabs
-    li.tab.active = link_to 'Messages'
-    li.tab = link_to 'Basic information'
-    li.tab = link_to 'Fees & Expenses'
+.grid-row
+  .column-two-thirds
+    ul.tabs
+      li.tab.active = link_to 'Messages'
+      li.tab = link_to 'Basic information'
+      li.tab = link_to 'Fees & Expenses'
 
-.messages
-  - if messages.any?
-    ul
-    - messages.each do |message|
-      li = message.body
-  - else
-    h4 No messages
+    .messages
+      - if messages.any?
+        ul.messages-screen
+          - messages.each do |message|
+            - author = match_from_collection(message.sender_id, :id, data.users)
+            li.messages-message class="#{author.first.persona_type == 'Advocate' ? 'advocate' : nil}"
+              .message-body = message.body
+              .message-meta
+                .message-author
+                  => get_full_name(author).first
+                  = "(#{author.first.persona_type.titleize})"
+                .message-date = DateTime.parse(message.created_at).strftime('%d/%m/%Y, %H:%M')
+      - else
+        .messages-screen
+          h3 No messages
+
+      .messages-input
+        input.form-control placeholder="Enter your message here"
+
+
+  .column-third.case-details
+    h3.case-details-title Details
+
+    dl.case-details-item
+      - if claim.original_submission_date
+        dt Case submitted
+        dd: span = DateTime.parse(claim.original_submission_date).strftime('%d/%m/%Y, %H:%M')
+
+      dt Offence
+      dd = match_from_collection(claim.offence_id, :id, data.offences).first.description
+
+      dt Court
+      dd = match_from_collection(claim.court_id, :id, data.courts).first.name
+
+      - if claim.trial_concluded_at
+        dt Trial concluded
+        dd = DateTime.parse(claim.trial_concluded_at).strftime('%d/%m/%Y')
+
+      - defendants = get_defendants(claim.id)
+      dt = defendants.count > 1 ? 'Defendants' : 'Defantant'
+      dd
+        ul
+        - defendants.each do |d|
+          li = d
+
+      dt Case type
+      dd = match_from_collection(claim.case_type_id, :id, data.case_types).first.name

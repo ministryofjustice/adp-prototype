@@ -1,0 +1,21 @@
+[{
+  "id": 1,
+  "role": "advocate",
+  "chamber_id": 1,
+  "created_at": "2015-10-28 12:23:09.542372",
+  "updated_at": "2015-10-28 12:23:09.542372",
+  "supplier_number": "AB234",
+  "uuid": "78eb7221-c9de-4495-9878-a90b52c0c76e",
+  "apply_vat": true
+ },
+ {
+  "id": 2,
+  "role": "admin",
+  "chamber_id": 1,
+  "created_at": "2015-10-28 12:23:09.615130",
+  "updated_at": "2015-10-28 12:23:09.615130",
+  "supplier_number": "XY234",
+  "uuid": "50304fee-5186-4826-9309-67c6615a624a",
+  "apply_vat": true
+ }
+]

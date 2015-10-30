@@ -46,8 +46,13 @@ helpers do
     collection.select {|i| i[remote_key] == local_key }
   end
 
+  def get_full_name(list)
+    list.map {|d| "#{d['first_name']} #{d['last_name']}" }
+  end
+
   def get_defendants(case_id)
-    data.defendants.select {|d| d.claim_id == case_id }.map {|d| "#{d['first_name']} #{d['last_name']}" }
+    defendants = data.defendants.select {|d| d.claim_id == case_id }
+    get_full_name(defendants)
   end
 end
 
@@ -56,7 +61,7 @@ end
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+  activate :livereload, ignore: [/source\/images\//]
 end
 
 # Load Sass paths
