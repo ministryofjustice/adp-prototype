@@ -1,0 +1,23 @@
+.global-nav {
+  @include clearfix;
+  margin-top: 20px;
+
+  .tabs {
+    float: left;
+    margin-bottom: -1px;
+  }
+}
+
+.global-nav-user {
+  list-style: none;
+  float: right;
+  margin-top: 2px;
+  padding: 0;
+  margin: 15px 0 0;
+  font-size: .9em;
+
+  li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+}

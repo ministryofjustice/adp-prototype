@@ -1,0 +1,633 @@
+[{
+  "id": 1,
+  "code": "401",
+  "name": "Aylesbury Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.631172",
+  "updated_at": "2015-10-28 12:23:09.631172"
+ },
+ {
+  "id": 2,
+  "code": "461",
+  "name": "Basildon Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.638458",
+  "updated_at": "2015-10-28 12:23:09.638458"
+ },
+ {
+  "id": 3,
+  "code": "404",
+  "name": "Birmingham Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.644576",
+  "updated_at": "2015-10-28 12:23:09.644576"
+ },
+ {
+  "id": 4,
+  "code": "428",
+  "name": "Blackfriars Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.651199",
+  "updated_at": "2015-10-28 12:23:09.651199"
+ },
+ {
+  "id": 5,
+  "code": "470",
+  "name": "Bolton Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.658357",
+  "updated_at": "2015-10-28 12:23:09.658357"
+ },
+ {
+  "id": 6,
+  "code": "406",
+  "name": "Bournemouth Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.672458",
+  "updated_at": "2015-10-28 12:23:09.672458"
+ },
+ {
+  "id": 7,
+  "code": "402",
+  "name": "Bradford Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.678452",
+  "updated_at": "2015-10-28 12:23:09.678452"
+ },
+ {
+  "id": 8,
+  "code": "408",
+  "name": "Bristol Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.685002",
+  "updated_at": "2015-10-28 12:23:09.685002"
+ },
+ {
+  "id": 9,
+  "code": "409",
+  "name": "Burnley Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.691219",
+  "updated_at": "2015-10-28 12:23:09.691219"
+ },
+ {
+  "id": 10,
+  "code": "410",
+  "name": "Cambridge Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.697683",
+  "updated_at": "2015-10-28 12:23:09.697683"
+ },
+ {
+  "id": 11,
+  "code": "479",
+  "name": "Canterbury Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.703786",
+  "updated_at": "2015-10-28 12:23:09.703786"
+ },
+ {
+  "id": 12,
+  "code": "411",
+  "name": "Cardiff Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.709892",
+  "updated_at": "2015-10-28 12:23:09.709892"
+ },
+ {
+  "id": 13,
+  "code": "412",
+  "name": "Carlisle Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.716055",
+  "updated_at": "2015-10-28 12:23:09.716055"
+ },
+ {
+  "id": 14,
+  "code": "413",
+  "name": "Central Criminal Court",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.722030",
+  "updated_at": "2015-10-28 12:23:09.722030"
+ },
+ {
+  "id": 15,
+  "code": "414",
+  "name": "Chelmsford Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.727931",
+  "updated_at": "2015-10-28 12:23:09.727931"
+ },
+ {
+  "id": 16,
+  "code": "415",
+  "name": "Chester Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.733756",
+  "updated_at": "2015-10-28 12:23:09.733756"
+ },
+ {
+  "id": 17,
+  "code": "416",
+  "name": "Chichester Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.739635",
+  "updated_at": "2015-10-28 12:23:09.739635"
+ },
+ {
+  "id": 18,
+  "code": "417",
+  "name": "Coventry Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.745662",
+  "updated_at": "2015-10-28 12:23:09.745662"
+ },
+ {
+  "id": 19,
+  "code": "418",
+  "name": "Croydon Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.751630",
+  "updated_at": "2015-10-28 12:23:09.751630"
+ },
+ {
+  "id": 20,
+  "code": "419",
+  "name": "Derby Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.757481",
+  "updated_at": "2015-10-28 12:23:09.757481"
+ },
+ {
+  "id": 21,
+  "code": "420",
+  "name": "Doncaster Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.763285",
+  "updated_at": "2015-10-28 12:23:09.763285"
+ },
+ {
+  "id": 22,
+  "code": "422",
+  "name": "Durham Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.769195",
+  "updated_at": "2015-10-28 12:23:09.769195"
+ },
+ {
+  "id": 23,
+  "code": "423",
+  "name": "Exeter Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.775128",
+  "updated_at": "2015-10-28 12:23:09.775128"
+ },
+ {
+  "id": 24,
+  "code": "424",
+  "name": "Gloucester Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.781626",
+  "updated_at": "2015-10-28 12:23:09.781626"
+ },
+ {
+  "id": 25,
+  "code": "425",
+  "name": "Grimsby Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.787985",
+  "updated_at": "2015-10-28 12:23:09.787985"
+ },
+ {
+  "id": 26,
+  "code": "474",
+  "name": "Guildford Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.793805",
+  "updated_at": "2015-10-28 12:23:09.793805"
+ },
+ {
+  "id": 27,
+  "code": "468",
+  "name": "Harrow Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.799451",
+  "updated_at": "2015-10-28 12:23:09.799451"
+ },
+ {
+  "id": 28,
+  "code": "403",
+  "name": "Hull Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.805435",
+  "updated_at": "2015-10-28 12:23:09.805435"
+ },
+ {
+  "id": 29,
+  "code": "440",
+  "name": "Inner London Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.811599",
+  "updated_at": "2015-10-28 12:23:09.811599"
+ },
+ {
+  "id": 30,
+  "code": "426",
+  "name": "Ipswich Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.817930",
+  "updated_at": "2015-10-28 12:23:09.817930"
+ },
+ {
+  "id": 31,
+  "code": "475",
+  "name": "Isleworth Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.824023",
+  "updated_at": "2015-10-28 12:23:09.824023"
+ },
+ {
+  "id": 32,
+  "code": "427",
+  "name": "Kingston Upon Thames Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.830279",
+  "updated_at": "2015-10-28 12:23:09.830279"
+ },
+ {
+  "id": 33,
+  "code": "429",
+  "name": "Leeds Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.836590",
+  "updated_at": "2015-10-28 12:23:09.836590"
+ },
+ {
+  "id": 34,
+  "code": "430",
+  "name": "Leicester Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.850054",
+  "updated_at": "2015-10-28 12:23:09.850054"
+ },
+ {
+  "id": 35,
+  "code": "431",
+  "name": "Lewes Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.856346",
+  "updated_at": "2015-10-28 12:23:09.856346"
+ },
+ {
+  "id": 36,
+  "code": "432",
+  "name": "Lincoln Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.862685",
+  "updated_at": "2015-10-28 12:23:09.862685"
+ },
+ {
+  "id": 37,
+  "code": "433",
+  "name": "Liverpool Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.868882",
+  "updated_at": "2015-10-28 12:23:09.868882"
+ },
+ {
+  "id": 38,
+  "code": "476",
+  "name": "Luton Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.875077",
+  "updated_at": "2015-10-28 12:23:09.875077"
+ },
+ {
+  "id": 39,
+  "code": "434",
+  "name": "Maidstone Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.881203",
+  "updated_at": "2015-10-28 12:23:09.881203"
+ },
+ {
+  "id": 40,
+  "code": "435",
+  "name": "Manchester (Crown Sq)",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.889541",
+  "updated_at": "2015-10-28 12:23:09.889541"
+ },
+ {
+  "id": 41,
+  "code": "436",
+  "name": "Manchester (Minshull St)",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.896051",
+  "updated_at": "2015-10-28 12:23:09.896051"
+ },
+ {
+  "id": 42,
+  "code": "437",
+  "name": "Merthyr Tydfil Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.902195",
+  "updated_at": "2015-10-28 12:23:09.902195"
+ },
+ {
+  "id": 43,
+  "code": "464",
+  "name": "Middx Guildhall Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.908131",
+  "updated_at": "2015-10-28 12:23:09.908131"
+ },
+ {
+  "id": 44,
+  "code": "438",
+  "name": "Mold Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.914241",
+  "updated_at": "2015-10-28 12:23:09.914241"
+ },
+ {
+  "id": 45,
+  "code": "439",
+  "name": "Newcastle Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.920424",
+  "updated_at": "2015-10-28 12:23:09.920424"
+ },
+ {
+  "id": 46,
+  "code": "478",
+  "name": "Newport (IOW) Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.926553",
+  "updated_at": "2015-10-28 12:23:09.926553"
+ },
+ {
+  "id": 47,
+  "code": "441",
+  "name": "Newport Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.932560",
+  "updated_at": "2015-10-28 12:23:09.932560"
+ },
+ {
+  "id": 48,
+  "code": "442",
+  "name": "Northampton Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.938747",
+  "updated_at": "2015-10-28 12:23:09.938747"
+ },
+ {
+  "id": 49,
+  "code": "443",
+  "name": "Norwich Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.944940",
+  "updated_at": "2015-10-28 12:23:09.944940"
+ },
+ {
+  "id": 50,
+  "code": "444",
+  "name": "Nottingham Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.950996",
+  "updated_at": "2015-10-28 12:23:09.950996"
+ },
+ {
+  "id": 51,
+  "code": "445",
+  "name": "Oxford Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.957121",
+  "updated_at": "2015-10-28 12:23:09.957121"
+ },
+ {
+  "id": 52,
+  "code": "473",
+  "name": "Peterborough Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.963288",
+  "updated_at": "2015-10-28 12:23:09.963288"
+ },
+ {
+  "id": 53,
+  "code": "446",
+  "name": "Plymouth Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.969385",
+  "updated_at": "2015-10-28 12:23:09.969385"
+ },
+ {
+  "id": 54,
+  "code": "447",
+  "name": "Portsmouth Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.975660",
+  "updated_at": "2015-10-28 12:23:09.975660"
+ },
+ {
+  "id": 55,
+  "code": "448",
+  "name": "Preston Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.981947",
+  "updated_at": "2015-10-28 12:23:09.981947"
+ },
+ {
+  "id": 56,
+  "code": "449",
+  "name": "Reading Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.988026",
+  "updated_at": "2015-10-28 12:23:09.988026"
+ },
+ {
+  "id": 57,
+  "code": "480",
+  "name": "Salisbury Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:09.994297",
+  "updated_at": "2015-10-28 12:23:09.994297"
+ },
+ {
+  "id": 58,
+  "code": "451",
+  "name": "Sheffield Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.000609",
+  "updated_at": "2015-10-28 12:23:10.000609"
+ },
+ {
+  "id": 59,
+  "code": "452",
+  "name": "Shrewsbury Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.006842",
+  "updated_at": "2015-10-28 12:23:10.006842"
+ },
+ {
+  "id": 60,
+  "code": "453",
+  "name": "Snaresbrook Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.013275",
+  "updated_at": "2015-10-28 12:23:10.013275"
+ },
+ {
+  "id": 61,
+  "code": "454",
+  "name": "Southampton Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.027251",
+  "updated_at": "2015-10-28 12:23:10.027251"
+ },
+ {
+  "id": 62,
+  "code": "471",
+  "name": "Southwark Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.033923",
+  "updated_at": "2015-10-28 12:23:10.033923"
+ },
+ {
+  "id": 63,
+  "code": "450",
+  "name": "St Albans Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.040263",
+  "updated_at": "2015-10-28 12:23:10.040263"
+ },
+ {
+  "id": 64,
+  "code": "455",
+  "name": "Stafford Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.046322",
+  "updated_at": "2015-10-28 12:23:10.046322"
+ },
+ {
+  "id": 65,
+  "code": "456",
+  "name": "Stoke on Trent Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.052619",
+  "updated_at": "2015-10-28 12:23:10.052619"
+ },
+ {
+  "id": 66,
+  "code": "457",
+  "name": "Swansea Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.058754",
+  "updated_at": "2015-10-28 12:23:10.058754"
+ },
+ {
+  "id": 67,
+  "code": "458",
+  "name": "Swindon Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.064930",
+  "updated_at": "2015-10-28 12:23:10.064930"
+ },
+ {
+  "id": 68,
+  "code": "459",
+  "name": "Taunton Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.070890",
+  "updated_at": "2015-10-28 12:23:10.070890"
+ },
+ {
+  "id": 69,
+  "code": "460",
+  "name": "Teeside Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.076979",
+  "updated_at": "2015-10-28 12:23:10.076979"
+ },
+ {
+  "id": 70,
+  "code": "477",
+  "name": "Truro Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.083068",
+  "updated_at": "2015-10-28 12:23:10.083068"
+ },
+ {
+  "id": 71,
+  "code": "462",
+  "name": "Warrington Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.089079",
+  "updated_at": "2015-10-28 12:23:10.089079"
+ },
+ {
+  "id": 72,
+  "code": "463",
+  "name": "Warwick Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.095052",
+  "updated_at": "2015-10-28 12:23:10.095052"
+ },
+ {
+  "id": 73,
+  "code": "407",
+  "name": "Weymouth and Dorcester Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.101022",
+  "updated_at": "2015-10-28 12:23:10.101022"
+ },
+ {
+  "id": 74,
+  "code": "465",
+  "name": "Winchester Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.106968",
+  "updated_at": "2015-10-28 12:23:10.106968"
+ },
+ {
+  "id": 75,
+  "code": "421",
+  "name": "Wolverhampton Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.113250",
+  "updated_at": "2015-10-28 12:23:10.113250"
+ },
+ {
+  "id": 76,
+  "code": "469",
+  "name": "Wood Green Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.119407",
+  "updated_at": "2015-10-28 12:23:10.119407"
+ },
+ {
+  "id": 77,
+  "code": "472",
+  "name": "Woolwich Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.125296",
+  "updated_at": "2015-10-28 12:23:10.125296"
+ },
+ {
+  "id": 78,
+  "code": "466",
+  "name": "Worcester Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.131442",
+  "updated_at": "2015-10-28 12:23:10.131442"
+ },
+ {
+  "id": 79,
+  "code": "467",
+  "name": "York Crown",
+  "court_type": "crown",
+  "created_at": "2015-10-28 12:23:10.137473",
+  "updated_at": "2015-10-28 12:23:10.137473"
+ }
+]

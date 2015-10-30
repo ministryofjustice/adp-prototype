@@ -1,0 +1,21 @@
+- content_for :proposition
+  = link_to 'Advocate Defence Payments', '/', class: 'proposition-name'
+
+- content_for :global_subheader
+  .subheader-item.phase-banner
+    .phase-tag.phase-tag-alpha ALPHA
+    .phase-banner-message This is a new service – your <a href="#">feedback</a> will help us to improve it.
+
+= wrap_layout :base
+
+  .global-nav
+    ul.tabs
+      li.tab class="#{current_page.data.section == 'claims' ? 'active' : nil}" = link_to 'Your claims', '/'
+      li.tab class="#{current_page.data.section == 'archive' ? 'active' : nil}" = link_to 'Archive', '/archive.html'
+      li.tab class="#{current_page.data.section == 'start-claim' ? 'active' : nil}" = link_to 'Start claim', '/start-claim.html'
+
+    ul.global-nav-user
+      li = link_to 'Bob Smith'
+      li = link_to 'Sign out'
+
+  = yield

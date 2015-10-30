@@ -1,0 +1,20 @@
+.cases {
+  table {
+    border-top: 1px solid $grey-2;
+  }
+
+  th,
+  td {
+    vertical-align: top;
+    padding: 10px 14px;
+  }
+
+	thead th,
+  .case-messages {
+		white-space: nowrap;
+	}
+
+  tr:nth-child(odd) td {
+    background: $grey-4;
+  }
+}

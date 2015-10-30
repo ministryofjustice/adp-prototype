@@ -1,0 +1,411 @@
+[{
+  "id": 1,
+  "claim_id": 1,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:10.547048",
+  "updated_at": "2015-10-28 12:23:10.547048"
+ },
+ {
+  "id": 2,
+  "claim_id": 2,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:11.620926",
+  "updated_at": "2015-10-28 12:23:11.620926"
+ },
+ {
+  "id": 3,
+  "claim_id": 3,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:12.922883",
+  "updated_at": "2015-10-28 12:23:12.922883"
+ },
+ {
+  "id": 4,
+  "claim_id": 4,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:14.265987",
+  "updated_at": "2015-10-28 12:23:14.265987"
+ },
+ {
+  "id": 5,
+  "claim_id": 5,
+  "type": "Assessment",
+  "fees": 693.9610652703988765,
+  "expenses": 924.52186775041466836184573740515,
+  "total": 1618.48293302081354486184573740515,
+  "created_at": "2015-10-28 12:23:15.240837",
+  "updated_at": "2015-10-28 12:23:16.127782"
+ },
+ {
+  "id": 6,
+  "claim_id": 6,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:16.491518",
+  "updated_at": "2015-10-28 12:23:16.491518"
+ },
+ {
+  "id": 7,
+  "claim_id": 7,
+  "type": "Assessment",
+  "fees": 1702,
+  "expenses": 0,
+  "total": 1702,
+  "created_at": "2015-10-28 12:23:17.535088",
+  "updated_at": "2015-10-28 12:23:18.527770"
+ },
+ {
+  "id": 8,
+  "claim_id": 8,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:18.888467",
+  "updated_at": "2015-10-28 12:23:18.888467"
+ },
+ {
+  "id": 9,
+  "claim_id": 9,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:19.798934",
+  "updated_at": "2015-10-28 12:23:19.798934"
+ },
+ {
+  "id": 10,
+  "claim_id": 10,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:20.757073",
+  "updated_at": "2015-10-28 12:23:20.757073"
+ },
+ {
+  "id": 11,
+  "claim_id": 11,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:22.053190",
+  "updated_at": "2015-10-28 12:23:22.053190"
+ },
+ {
+  "id": 12,
+  "claim_id": 12,
+  "type": "Assessment",
+  "fees": 4421.5967392137482208,
+  "expenses": 642.313945081857342948565796815632,
+  "total": 5063.910684295605563748565796815632,
+  "created_at": "2015-10-28 12:23:23.091782",
+  "updated_at": "2015-10-28 12:23:24.333889"
+ },
+ {
+  "id": 13,
+  "claim_id": 13,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:24.716282",
+  "updated_at": "2015-10-28 12:23:24.716282"
+ },
+ {
+  "id": 14,
+  "claim_id": 14,
+  "type": "Assessment",
+  "fees": 2532,
+  "expenses": 0,
+  "total": 2532,
+  "created_at": "2015-10-28 12:23:25.930102",
+  "updated_at": "2015-10-28 12:23:27.017070"
+ },
+ {
+  "id": 15,
+  "claim_id": 15,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:27.386463",
+  "updated_at": "2015-10-28 12:23:27.386463"
+ },
+ {
+  "id": 16,
+  "claim_id": 16,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:28.052942",
+  "updated_at": "2015-10-28 12:23:28.052942"
+ },
+ {
+  "id": 17,
+  "claim_id": 17,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:29.360797",
+  "updated_at": "2015-10-28 12:23:29.360797"
+ },
+ {
+  "id": 18,
+  "claim_id": 18,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:30.663483",
+  "updated_at": "2015-10-28 12:23:30.663483"
+ },
+ {
+  "id": 19,
+  "claim_id": 19,
+  "type": "Assessment",
+  "fees": 775.22606397969739,
+  "expenses": 342.434453630893977771462255516544,
+  "total": 1117.660517610591367771462255516544,
+  "created_at": "2015-10-28 12:23:31.612509",
+  "updated_at": "2015-10-28 12:23:32.369557"
+ },
+ {
+  "id": 20,
+  "claim_id": 20,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:32.714396",
+  "updated_at": "2015-10-28 12:23:32.714396"
+ },
+ {
+  "id": 21,
+  "claim_id": 21,
+  "type": "Assessment",
+  "fees": 1706,
+  "expenses": 2128.9490347578436,
+  "total": 3834.9490347578436,
+  "created_at": "2015-10-28 12:23:33.874098",
+  "updated_at": "2015-10-28 12:23:34.951519"
+ },
+ {
+  "id": 22,
+  "claim_id": 22,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:35.341221",
+  "updated_at": "2015-10-28 12:23:35.341221"
+ },
+ {
+  "id": 23,
+  "claim_id": 23,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:36.114640",
+  "updated_at": "2015-10-28 12:23:36.114640"
+ },
+ {
+  "id": 24,
+  "claim_id": 24,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:37.361858",
+  "updated_at": "2015-10-28 12:23:37.361858"
+ },
+ {
+  "id": 25,
+  "claim_id": 25,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:38.848653",
+  "updated_at": "2015-10-28 12:23:38.848653"
+ },
+ {
+  "id": 26,
+  "claim_id": 26,
+  "type": "Assessment",
+  "fees": 2266.020041801476608,
+  "expenses": 385.24033713203528667545152590741,
+  "total": 2651.26037893351189467545152590741,
+  "created_at": "2015-10-28 12:23:39.592454",
+  "updated_at": "2015-10-28 12:23:40.539979"
+ },
+ {
+  "id": 27,
+  "claim_id": 27,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:23:40.900578",
+  "updated_at": "2015-10-28 12:23:40.900578"
+ },
+ {
+  "id": 28,
+  "claim_id": 28,
+  "type": "Assessment",
+  "fees": 1999,
+  "expenses": 1365.9149281078984,
+  "total": 3364.9149281078984,
+  "created_at": "2015-10-28 12:23:42.165894",
+  "updated_at": "2015-10-28 12:23:43.170595"
+ },
+ {
+  "id": 29,
+  "claim_id": 29,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:33:25.314132",
+  "updated_at": "2015-10-28 12:33:25.314132"
+ },
+ {
+  "id": 30,
+  "claim_id": 30,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:34:55.545065",
+  "updated_at": "2015-10-28 12:34:55.545065"
+ },
+ {
+  "id": 31,
+  "claim_id": 31,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:34:56.659090",
+  "updated_at": "2015-10-28 12:34:56.659090"
+ },
+ {
+  "id": 32,
+  "claim_id": 32,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:34:57.692833",
+  "updated_at": "2015-10-28 12:34:57.692833"
+ },
+ {
+  "id": 33,
+  "claim_id": 33,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-28 12:34:58.917641",
+  "updated_at": "2015-10-28 12:34:58.917641"
+ },
+ {
+  "id": 34,
+  "claim_id": 34,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-29 15:09:51.580357",
+  "updated_at": "2015-10-29 15:09:51.580357"
+ },
+ {
+  "id": 35,
+  "claim_id": 35,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-29 15:09:52.719063",
+  "updated_at": "2015-10-29 15:09:52.719063"
+ },
+ {
+  "id": 36,
+  "claim_id": 36,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-29 15:09:53.518574",
+  "updated_at": "2015-10-29 15:09:53.518574"
+ },
+ {
+  "id": 37,
+  "claim_id": 37,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-29 15:09:54.330476",
+  "updated_at": "2015-10-29 15:09:54.330476"
+ },
+ {
+  "id": 38,
+  "claim_id": 38,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-29 15:46:25.415327",
+  "updated_at": "2015-10-29 15:46:25.415327"
+ },
+ {
+  "id": 39,
+  "claim_id": 39,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-29 15:46:26.236273",
+  "updated_at": "2015-10-29 15:46:26.236273"
+ },
+ {
+  "id": 40,
+  "claim_id": 40,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-29 15:46:27.045959",
+  "updated_at": "2015-10-29 15:46:27.045959"
+ },
+ {
+  "id": 41,
+  "claim_id": 41,
+  "type": "Assessment",
+  "fees": 0,
+  "expenses": 0,
+  "total": 0,
+  "created_at": "2015-10-29 15:46:27.823623",
+  "updated_at": "2015-10-29 15:46:27.823623"
+ }
+]

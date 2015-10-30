@@ -1,0 +1,60 @@
+---
+section: claims
+---
+
+.summary
+  .grid-row
+    .column-two-thirds
+      h1 Your claims
+
+      .summary-details.grid-row
+        .column-half
+          .summary-title Total outstanding:
+          .summary-value £17,471.15
+          = link_to 'View details', '#', class: 'summary-more'
+        .column-half
+          .summary-title Total authorised:
+          .summary-value £13,099.67
+          = link_to 'View details', '#', class: 'summary-more'
+
+    .column-third.get-started
+      button.button.button-get-started Start a claim
+
+      form.import-claim method="post"
+        label for="json_file" Import claim
+        input#json_file type="file"
+        button.button.upload type="submit" Upload
+
+form.toolbar
+  .form-group
+    input.form-control> placeholder="e.g. defendant name, advocate name"
+    button.button.button-secondary Search
+
+.cases
+  table
+    thead
+      tr
+        th Case number
+        th Defendant(s)
+        th Claimed
+        th Assessed
+        th Status
+        th Date submitted
+        th Messages
+    tbody
+      - data.cases.reverse.each do |c|
+        tr
+          td = link_to c.case_number, "/claims/#{c.id}.html"
+          td = get_defendants(c.id).join(',<br>')
+          td = number_to_currency(c.total + c.vat_amount, unit: '£')
+          - amount_assessed = match_from_collection(c.id, :claim_id, data.determinations).first.total
+          td =  amount_assessed > 0 ? number_to_currency(amount_assessed, unit: '£') : '—'
+          td = c.state.humanize
+          td = c.original_submission_date ? DateTime.parse(c.original_submission_date).strftime('%d/%m/%Y') : '—'
+          td.case-messages
+            - messages = match_from_collection(c.id, :claim_id, data.messages)
+            - if messages.any?
+              => link_to 'Messages'
+              span = "(#{messages.count})"
+            - else
+              | —

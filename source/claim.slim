@@ -1,0 +1,53 @@
+---
+section: claim
+---
+
+- messages = match_from_collection(claim.id, :claim_id, data.messages)
+
+.summary
+  .grid-row.claim
+    .column-third
+      .summary-block
+        dt Case number
+        dd.summary-block-title = claim.case_number
+      .summary-block
+        dt Offence
+        dd = match_from_collection(claim.offence_id, :id, data.offences).first.description
+
+    .column-third
+      dl.summary-block
+        - defendants = get_defendants(claim.id)
+        dt = defendants.count > 1 ? 'Defendants' : 'Defantant'
+        dd
+          ul
+            - defendants.each do |d|
+              li = d
+      dl.summary-block
+        dt Court
+        dd = match_from_collection(claim.court_id, :id, data.courts).first.name
+
+    .column-third
+      dl.summary-block
+        dt Status
+        dd
+          span.case-status class="#{claim.state}" = claim.state.humanize
+      - if claim.original_submission_date
+        dl.summary-block
+          dt Case submitted
+          dd
+            span = DateTime.parse(claim.original_submission_date).strftime('%d/%m/%Y, %H:%M')
+
+
+.local-nav
+  ul.tabs
+    li.tab.active = link_to 'Messages'
+    li.tab = link_to 'Basic information'
+    li.tab = link_to 'Fees & Expenses'
+
+.messages
+  - if messages.any?
+    ul
+    - messages.each do |message|
+      li = message.body
+  - else
+    h4 No messages

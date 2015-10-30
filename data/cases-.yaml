@@ -1,0 +1,38 @@
+-
+  number: A36279035
+  defendants:
+    - Deven Auer
+  claimed_value: 3195.53
+  assessed_value: ~
+  status: Refused
+  submitted_at: 28/10/2015
+  messages:
+    total_count: 4
+    has_new: true
+-
+  number: N95476348
+  defendants:
+    - Aleen O'Reilly
+    - Ramiro Kovacek
+  claimed_value: 7899.25
+  assessed_value: 6076.69
+  status: Part authorised
+  submitted_at: 28/10/2015
+  messages:
+    total_count: 6
+    has_new: true
+-
+  number: Y35985473
+  defendants:
+    - Rubie Crooks
+    - Nadia Gerlach
+    - Clovis O'Hara
+    - Marley Hoppe
+    - Eudora Bogisich
+  claimed_value: 3341.98
+  assessed_value: ~
+  status: Draft
+  submitted_at: 28/10/2015
+  messages:
+    total_count: 0
+    has_new: false
