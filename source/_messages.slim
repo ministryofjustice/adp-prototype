@@ -1,0 +1,18 @@
+.tab-panel#messages
+  - if messages.any?
+    ul.messages-screen
+      - messages.each do |message|
+        - author = match_from_collection(message.sender_id, :id, data.users)
+        li.messages-message class="#{author.first.persona_type == 'Advocate' ? 'advocate' : nil}"
+          .message-body = message.body
+          .message-meta
+            .message-author
+              => get_full_name(author).first
+              = "(#{author.first.persona_type.titleize})"
+            .message-date = DateTime.parse(message.created_at).strftime('%d/%m/%Y, %H:%M')
+  - else
+    .messages-screen
+      h3 No messages
+
+  .messages-input
+    input.form-control placeholder="Enter your message here"

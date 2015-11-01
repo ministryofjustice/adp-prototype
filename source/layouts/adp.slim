@@ -13,7 +13,7 @@
       li class="#{current_page.data.section == 'claims' ? 'active' : nil}" = link_to 'Your claims', '/'
       li class="#{current_page.data.section == 'archive' ? 'active' : nil}" = link_to 'Archive', '/archive.html'
       li class="#{current_page.data.section == 'start-claim' ? 'active' : nil}" = link_to 'Start claim', '/start-claim.html'
-      li class="#{current_page.data.section == 'manage-advocates' ? 'active' : nil}" = link_to 'Manage', '/manage.html'
+      li class="#{current_page.data.section == 'manage' ? 'active' : nil}" = link_to 'Manage', '/manage.html'
 
     ul.global-nav-user
       li = link_to 'Bob Smith'

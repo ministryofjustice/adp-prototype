@@ -1,0 +1,6 @@
+- if locals[:label] && locals[:value]
+  dl.summary-block class="#{locals[:size] ? 'column-' + locals[:size] : nil}"
+    dt = locals[:label]
+    dd = locals[:value]
+    - if locals[:link_to_more]
+      dd.summary-more = link_to 'View details'

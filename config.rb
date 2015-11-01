@@ -78,10 +78,20 @@ end
 set :layout, 'adp'
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
+
+
+# Simple launcher for local evaluation build
+# Double click `build/launch.command` (Mac)
+after_build do |builder|
+  file = "#{build_dir}/launch.command"
+  open(file, 'w') do |f|
+    f << "#!/bin/bash\n"
+    f << 'cd `dirname $0` && open "http://localhost:8000" && python -m SimpleHTTPServer'
+  end
+  File.chmod(0555, file)
+end
 
 # Build-specific configuration
 configure :build do

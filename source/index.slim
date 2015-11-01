@@ -8,14 +8,16 @@ section: claims
       h1 Your claims
 
       .summary-details.grid-row
-        .column-half
-          .summary-title Total outstanding:
-          .summary-value £17,471.15
-          = link_to 'View details', '#', class: 'summary-more'
-        .column-half
-          .summary-title Total authorised:
-          .summary-value £13,099.67
-          = link_to 'View details', '#', class: 'summary-more'
+        = partial 'summary-block',
+          locals: { label: 'Amount claimed',
+          size: 'half',
+          value: '£17,471.15',
+          link_to_more: '#' }
+        = partial 'summary-block',
+          locals: { label: 'Total authorised',
+          size: 'half',
+          value: '£13,099.67',
+          link_to_more: '#' }
 
     .column-third.get-started
       button.button.button-get-started Start a claim
@@ -57,7 +59,6 @@ form.toolbar
           td.case-messages
             - messages = match_from_collection(c.id, :claim_id, data.messages)
             - if messages.any?
-              => link_to 'Messages'
-              span = "(#{messages.count})"
+              => link_to pluralize(messages.count, 'message'), "/claims/#{c.id}.html#claim"
             - else
               | —

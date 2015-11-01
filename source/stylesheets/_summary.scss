@@ -2,7 +2,8 @@
   border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
   box-shadow: 0 5px 0 lighten($grey-3, 5), 0 -5px 0 lighten($grey-3, 5);
-  padding: 30px 0;
+  margin: 20px 0;
+  padding: 20px 25px;
 
   h1 {
     margin: 0;
@@ -12,23 +13,27 @@
     }
   }
 
+  .column-two-thirds {
+    padding: 20px 15px;
+    margin: -20px 0;
+    border-right: 4px solid lighten($grey-3, 5);
+    margin-right: -4px;
+  }
+
+  .case-status {
+    margin: -.25em 0;
+    font-size: .8em;
+  }
+
   .summary-details,
   .import-claim {
     margin-top: 20px;
   }
 
-  .summary-title,
-  .summary-value {
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-
-  .summary-value {
-    font-size: 1.7em;
-  }
-
   .get-started {
-    border-left: 4px solid $grey-3;
+    border-left: 4px solid lighten($grey-3, 5);
+    padding: 20px;
+    margin: -20px 0;
   }
 
   .import-claim {

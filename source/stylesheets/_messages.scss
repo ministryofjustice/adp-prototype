@@ -1,6 +1,7 @@
-.messages {
-  border: 2px solid $grey-2;
+#messages {
   font-size: 1rem;
+  margin: 10px 0;
+  background: $grey-4;
 
   .messages-screen {
     margin: 0;
@@ -51,7 +52,7 @@
   .messages-input {
     margin: 0;
     padding: 10px;
-    // border-top: 2px solid $grey-2;
+    border-top: 4px solid white;
     background: $grey-2;
 
     input {

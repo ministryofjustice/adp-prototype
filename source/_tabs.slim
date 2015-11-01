@@ -1,0 +1,6 @@
+- tabs ||= []
+- if tabs.any?
+  ul.tabs
+    - tabs.each do |item|
+      li.tab class="#{item[:is_active] ? 'active' : nil}"
+        = link_to(item[:label], "##{item[:id]}")

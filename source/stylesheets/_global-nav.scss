@@ -1,12 +1,24 @@
 .global-nav {
   @include clearfix;
   margin-top: 10px;
-  margin-bottom: 5px;
-  padding-bottom: 15px;
+  margin-bottom: 20px;
   line-height: 1.1;
 
-  a {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 -.3em .1em;
+  }
+
+  li {
+    float: left;
     padding: 0 .3em;
+  }
+
+  a {
+    padding: .3em .4em .2em;
+    margin: -.3em 0 -.2em;
+    display: block;
   }
 
   a:hover {
@@ -20,20 +32,20 @@
 }
 
 .global-nav-menu {
-  list-style: none;
   font-size: 1.4rem;
-  padding: 0;
-  margin: 0;
   float: left;
 
   li {
-    display: inline-block;
     border-right: 1px solid $grey-3;
-    padding-right: .3em;
-    margin-right: .3em;
 
     &:last-child {
       border: 0;
+    }
+
+    &.active a {
+      color: black;
+      outline: 2px solid black;
+      text-decoration: none;
     }
   }
 
@@ -44,21 +56,19 @@
     &:hover {
       text-decoration: underline;
     }
+
+    &:focus {
+      text-decoration: none;
+    }
   }
 }
 
-.global-nav-user {
-  list-style: none;
+ul.global-nav-user {
   float: right;
-  margin-top: 2px;
-  padding: 0;
-  margin: 4px 0 0;
+  margin-top: .25em;
   font-size: .9em;
 
   li {
-    display: inline-block;
-    margin-left: .4em;
-    padding-left: .4em;
     border-left: 1px solid $grey-3;
 
     &:first-child {
