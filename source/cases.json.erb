@@ -1,0 +1,20 @@
+<% cases = data.cases.reverse.map do |c|
+  defendants = get_defendants(c.id)
+  amount_assessed = match_from_collection(c.id, :claim_id, data.determinations).first.total
+  date_submitted = c.original_submission_date ? DateTime.parse(c.original_submission_date).strftime('%d/%m/%Y') : nil
+
+  {
+    id: c.id,
+    case_number: c.case_number,
+    defendants: defendants,
+    amount_claimed: number_to_currency(c.total + c.vat_amount, unit: '£'),
+    amount_assessed: number_to_currency(amount_assessed, unit: '£'),
+    state: c.state,
+    status: c.state.humanize,
+    date_submitted: date_submitted,
+    message_count: match_from_collection(c.id, :claim_id, data.messages).count
+  }
+
+end.to_json %>
+
+<%= cases %>

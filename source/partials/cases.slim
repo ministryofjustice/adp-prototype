@@ -1,0 +1,23 @@
+.cases
+  table
+    thead
+      tr
+        th Case number
+        th Defendant(s)
+        th Claimed
+        th Assessed
+        th Status
+        th Date submitted
+        th Messages
+    tbody
+      tr ng-repeat="case in cases | filter: search"
+        td = link_to '{{ case.case_number }}', "/claims/{{ case.id }}.html"
+        td {{ case.defendants.join(', ') }}
+        td {{ case.amount_claimed }}
+        td {{ case.amount_assessed }}
+        td: span.case-status class="{{ case.state }}" {{ case.status }}
+        td {{ case.date_submitted }}
+        td.case-messages ng-if="case.message_count > 0"
+          = link_to '/claims/{{ case.id }}.html#claim' do
+            ng-pluralize count="case.message_count" when="{ '1': '{} message', 'other': '{} messages'}"
+        td.case-messages ng-if="case.message_count == 0" —

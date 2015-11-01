@@ -11,7 +11,11 @@ module.exports = {
   },
   module: {
     loaders: [
-      { include: /\.json$/, loaders: ['json-loader'] }
+      { include: /\.json$/, loaders: ['json-loader'] },
+      {
+        test: /\.jsx$/,
+        loader: 'jsx-loader?insertPragma=React.DOM&harmony'
+      }
     ]
   },
   resolve: {
@@ -19,7 +23,7 @@ module.exports = {
       'node_modules',
       'node_modules/mojular/node_modules'
     ],
-    extensions: ['', '.json', '.js']
+    extensions: ['', '.json', '.js', '.jsx']
   },
   plugins: [
     new webpack.optimize.DedupePlugin()

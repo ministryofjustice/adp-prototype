@@ -2,6 +2,8 @@
 section: claims
 ---
 
+- cases = local_data('./cases.json')
+
 .summary
   .grid-row
     .column-two-thirds
@@ -20,7 +22,7 @@ section: claims
           link_to_more: '#' }
 
     .column-third.get-started
-      button.button.button-get-started Start a claim
+      a.button.button-get-started href="/start-claim.html" Start a claim
 
       form.import-claim method="post"
         label for="json_file" Import claim
@@ -28,10 +30,10 @@ section: claims
         button.button.upload type="submit" Upload
 
 form.toolbar
-  input.form-control> placeholder="e.g. defendant name, advocate name"
-  button.button.button-secondary Search
+  input.form-control> placeholder="e.g. defendant name, advocate name" ng-model="search"
+  / button.button.button-secondary Search
 
-.cases
+.cases(cases)
   table
     thead
       tr
@@ -43,22 +45,19 @@ form.toolbar
         th Date submitted
         th Messages
     tbody
-      - data.cases.reverse.each do |c|
-        - defendants = get_defendants(c.id)
+      - cases.each do |c|
         tr
-          td = link_to c.case_number, "/claims/#{c.id}.html"
+          td = link_to c['case_number'], "/claims/#{c['id']}.html"
           td
-            => defendants[0...2].join(',<br>')
-            - if defendants.count > 2
-              .more = link_to "and #{defendants.count - 2} more"
-          td = number_to_currency(c.total + c.vat_amount, unit: '£')
-          - amount_assessed = match_from_collection(c.id, :claim_id, data.determinations).first.total
-          td =  amount_assessed > 0 ? number_to_currency(amount_assessed, unit: '£') : '—'
-          td: span.case-status class="#{c.state}" = c.state.humanize
-          td = c.original_submission_date ? DateTime.parse(c.original_submission_date).strftime('%d/%m/%Y') : '—'
+            => c['defendants'][0...2].join(',<br>')
+            - if c['defendants'].count > 2
+              .more = link_to "and #{c['defendants'].count - 2} more"
+          td = c['amount_claimed']
+          td = c['amount_assessed']
+          td: span.case-status class="#{c['state']}" = c['status']
+          td = c['date_submitted']
           td.case-messages
-            - messages = match_from_collection(c.id, :claim_id, data.messages)
-            - if messages.any?
-              => link_to pluralize(messages.count, 'message'), "/claims/#{c.id}.html#claim"
+            - if c['message_count'] > 0
+              => link_to pluralize(c['message_count'], 'message'), "/claims/#{c['id']}.html#claim"
             - else
               | —

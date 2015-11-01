@@ -1,6 +1,7 @@
 {
   "name": "adp-proto",
   "dependencies": {
+    "angular": "^1.4.7",
     "mojular": "mojular/mojular",
     "mojular-govuk-elements": "mojular/govuk-elements",
     "mojular-moj-elements": "mojular/moj-elements",
