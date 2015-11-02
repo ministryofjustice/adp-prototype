@@ -45,7 +45,7 @@
         <td>
           {{ case.date_submitted }}
         </td>
-        <td class="case-messages" ng-if="case.message_count > 0"><a href="/claims/{{ case.id }}.html#claim">
+        <td class="case-messages" ng-if="case.message_count > 0"><a href="claims/{{ case.id }}.html#claim">
                     <ng-pluralize count="case.message_count" when="{ '1': '{} message', 'other': '{} messages'}"></ng-pluralize></a>
         </td>
         <td class="case-messages" ng-if="case.message_count == 0">
