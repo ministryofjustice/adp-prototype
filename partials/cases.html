@@ -1,0 +1,60 @@
+<div class="cases">
+  <table ng-if="(cases | filter: search).length">
+    <thead>
+      <tr>
+        <th>
+          Case number
+        </th>
+        <th>
+          Defendant(s)
+        </th>
+        <th>
+          Claimed
+        </th>
+        <th>
+          Assessed
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+          Date submitted
+        </th>
+        <th>
+          Messages
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="case in cases | filter: search">
+        <td>
+          <a href="/claims/{{ case.id }}.html">{{ case.case_number }}</a>
+        </td>
+        <td>
+          {{ case.defendants.join(', ') }}
+        </td>
+        <td>
+          {{ case.amount_claimed }}
+        </td>
+        <td>
+          {{ case.amount_assessed }}
+        </td>
+        <td>
+          <span class="case-status {{ case.state }}">{{ case.status }}</span>
+        </td>
+        <td>
+          {{ case.date_submitted }}
+        </td>
+        <td class="case-messages" ng-if="case.message_count > 0"><a href="/claims/{{ case.id }}.html#claim">
+                    <ng-pluralize count="case.message_count" when="{ '1': '{} message', 'other': '{} messages'}"></ng-pluralize></a>
+        </td>
+        <td class="case-messages" ng-if="case.message_count == 0">
+          —
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 ng-if="!(cases | filter: search).length">
+    No results
+  </h4>
+</div>
