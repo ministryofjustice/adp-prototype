@@ -884,7 +884,7 @@ select.form-control {
     padding: 0 .3em; }
   /* line 18, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
   .global-nav a, .global-nav details summary, details .global-nav summary {
-    padding: .3em .4em .2em;
+    padding: .3em .2em .2em;
     margin: -.3em 0 -.2em;
     display: block; }
   /* line 24, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
@@ -908,31 +908,27 @@ select.form-control {
     /* line 45, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
     .global-nav-menu li.active a, .global-nav-menu li.active details summary, details .global-nav-menu li.active summary {
       color: black;
-      outline: 2px solid black;
-      text-decoration: none; }
-  /* line 52, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
+      text-decoration: underline; }
+  /* line 51, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
   .global-nav-menu a, .global-nav-menu details summary, details .global-nav-menu summary {
     text-decoration: none;
     color: #005ea5; }
-    /* line 56, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
+    /* line 55, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
     .global-nav-menu a:hover, .global-nav-menu details summary:hover, details .global-nav-menu summary:hover {
       text-decoration: underline; }
-    /* line 60, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
-    .global-nav-menu a:focus, .global-nav-menu details summary:focus, details .global-nav-menu summary:focus {
-      text-decoration: none; }
 
-/* line 66, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
+/* line 61, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
 ul.global-nav-user {
   float: right;
   margin-top: .25em;
   font-size: .9em; }
-  /* line 71, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
+  /* line 66, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
   ul.global-nav-user li {
     border-left: 1px solid #dee0e2; }
-    /* line 74, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
+    /* line 69, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
     ul.global-nav-user li:first-child {
       border: 0; }
-  /* line 79, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
+  /* line 74, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_global-nav.scss */
   ul.global-nav-user a, ul.global-nav-user details summary, details ul.global-nav-user summary {
     color: #0b0c0c; }
 
