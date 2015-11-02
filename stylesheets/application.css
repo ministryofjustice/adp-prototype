@@ -942,7 +942,7 @@ ul.global-nav-user {
   border-bottom: 1px solid #ccc;
   box-shadow: 0 5px 0 #ecedee, 0 -5px 0 #ecedee;
   margin: 20px 0;
-  padding: 20px 25px; }
+  padding: 20px 0; }
   /* line 8, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_summary.scss */
   .summary h1 {
     margin: 0; }
@@ -1135,15 +1135,15 @@ ul.global-nav-user {
 /* line 1, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_messages.scss */
 #messages {
   font-size: 1rem;
-  margin: 10px 0;
-  background: #f8f8f8; }
-  /* line 6, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_messages.scss */
+  margin: 10px 0; }
+  /* line 5, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_messages.scss */
   #messages .messages-screen {
     margin: 0;
     padding: 10px;
     list-style: none;
-    height: 500px;
-    overflow: auto; }
+    height: 400px;
+    overflow: auto;
+    background: #f8f8f8; }
     /* line 13, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_messages.scss */
     #messages .messages-screen h3 {
       margin: 10px; }
@@ -1176,11 +1176,10 @@ ul.global-nav-user {
       float: right; }
   /* line 52, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_messages.scss */
   #messages .messages-input {
-    margin: 0;
+    margin: 4px 0 0;
     padding: 10px;
-    border-top: 4px solid white;
     background: #bfc1c3; }
-    /* line 58, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_messages.scss */
+    /* line 57, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_messages.scss */
     #messages .messages-input input {
       width: 100%;
       border-color: #6f777b; }
