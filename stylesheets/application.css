@@ -1046,6 +1046,9 @@ ul.global-nav-user {
 /* line 56, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_tabs.scss */
 .tab-panel {
   animation: reveal 800ms; }
+  /* line 59, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_tabs.scss */
+  .tab-panel h2 {
+    margin: 30px 0 10px; }
 
 /* line 1, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_toolbar.scss */
 .toolbar {
@@ -1070,9 +1073,6 @@ ul.global-nav-user {
 .cases .case-messages {
   white-space: nowrap; }
 /* line 18, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_cases.scss */
-.cases tr:nth-child(odd) td {
-  background: #f8f8f8; }
-/* line 22, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/_cases.scss */
 .cases .case-status {
   padding: .1em .5em;
   line-height: 1;
@@ -1223,3 +1223,7 @@ ul.global-nav-user {
     opacity: 0; }
   100% {
     opacity: 1; } }
+/* line 24, /Users/tyom/Dropbox/Code/MoJ/adp-proto/source/stylesheets/application.css.scss */
+table tr:nth-child(even) th,
+table tr:nth-child(even) td {
+  background: #f8f8f8; }
