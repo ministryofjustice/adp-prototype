@@ -41,6 +41,10 @@ app.directive('messages', function(getCases) {
         $scope.messages = window.messages;
       });
 
+      $('body').animate({
+        scrollTop: document.getElementById('claim').offsetTop
+      }, 220);
+
       $scope.postMessage = function() {
         if(!$scope.newMessage) {
           return;
