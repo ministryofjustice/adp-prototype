@@ -16,7 +16,7 @@
   }
 
   a {
-    padding: .3em .4em .2em;
+    padding: .3em .2em .2em;
     margin: -.3em 0 -.2em;
     display: block;
   }
@@ -44,8 +44,7 @@
 
     &.active a {
       color: black;
-      outline: 2px solid black;
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 
@@ -55,10 +54,6 @@
 
     &:hover {
       text-decoration: underline;
-    }
-
-    &:focus {
-      text-decoration: none;
     }
   }
 }
