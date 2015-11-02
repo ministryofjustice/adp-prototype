@@ -13,8 +13,8 @@
 
 # Per-page layout changes:
 #
-# With no layout
-# page "/path/to/file.html", :layout => false
+page '*.json', layout: false
+page '/partials/*', layout: false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
@@ -36,6 +36,10 @@ data.cases.each do |c|
   }
 end
 
+Slim::Engine.disable_option_validator!
+Slim::Engine.set_options pretty: true
+Slim::Engine.set_options attr_list_delims: { '(' => ')', '[' => ']' }
+
 ###
 # Helpers
 ###
@@ -47,12 +51,42 @@ helpers do
   end
 
   def get_full_name(list)
-    list.map {|d| "#{d['first_name']} #{d['last_name']}" }
+    list.map {|i| "#{i['first_name']} #{i['last_name']}" }
   end
 
   def get_defendants(case_id)
     defendants = data.defendants.select {|d| d.claim_id == case_id }
     get_full_name(defendants)
+  end
+
+  def get_advocates(claim)
+    users = data.users.select do |u|
+      u.persona_id == claim.advocate_id && u.persona_type == 'Advocate'
+    end.map do |u|
+      {
+        name: "#{u.first_name} #{u.last_name}"
+      }
+    end
+  end
+
+  def local_data(path)
+    current_path =  current_resource.path
+    result = sitemap.find_resource_by_path(relative_dir(current_path, path).to_s)
+    raise "#{path} not found" unless result
+
+    case result.ext
+    when '.yaml', '.yml'
+      result = YAML.load(result.render)
+    when '.json'
+      result = JSON.load(result.render)
+    end
+
+    result
+  end
+
+  def relative_dir(path, *args)
+    relative_path = args ? args.join('/') : ''
+    Pathname(path).dirname.join(relative_path)
   end
 end
 
@@ -95,6 +129,8 @@ end
 
 # Build-specific configuration
 configure :build do
+  set :relative_links, true
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -105,8 +141,12 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :deploy do |deploy|
+  deploy.method = :git
 end

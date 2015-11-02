@@ -2,6 +2,8 @@
 section: claim
 ---
 
+- messages = local_data('/messages.json')
+
 - if claim ||= nil
   .summary
     .grid-row.claim
@@ -32,10 +34,16 @@ section: claim
                  { label: 'Basic information', id: 'basic-info' },
                  { label: 'Fees & Expenses', id: 'fees-expenses' }]
 
-      = partial 'messages', object: match_from_collection(claim.id, :claim_id, data.messages)
+      .tab-panel#messages
+        javascript:
+          window.messages = #{match_from_collection(claim.id, 'claim_id', messages).to_json}
+        messages
 
       .tab-panel#basic-info
         h1 Basic info
+
+      .tab-panel#fees-expenses
+        h1 Fees & expenses
 
     .column-third.case-details
       h3.case-details-title Details

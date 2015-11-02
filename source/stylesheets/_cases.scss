@@ -1,6 +1,7 @@
 .cases {
   table {
     border-top: 1px solid $grey-2;
+    animation: reveal 800ms;
   }
 
   th,

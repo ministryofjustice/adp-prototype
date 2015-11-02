@@ -1,0 +1,15 @@
+<% messages = data.messages.map do |message|
+  author = match_from_collection(message.sender_id, :id, data.users).first
+
+  {
+    id: message.id,
+    body: message.body,
+    author: "#{author.first_name} #{author.last_name}",
+    author_type: author.persona_type.downcase,
+    created_at: DateTime.parse(message.created_at).strftime('%d/%m/%Y, %H:%M'),
+    claim_id: message.claim_id
+  }
+
+end.to_json %>
+
+<%= messages %>

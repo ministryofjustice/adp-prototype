@@ -18,8 +18,6 @@ Mojular.Modules.CustomiseFileUpload = {
   },
 
   bindEvents: function() {
-    var self = this;
-
     this.$forms.on('click', function(e) {
       var $target = $(e.target);
       if($target.attr('type') === 'button') {
