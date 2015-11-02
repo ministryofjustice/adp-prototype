@@ -31,33 +31,5 @@ section: claims
 
 form.toolbar
   input.form-control> placeholder="e.g. defendant name, advocate name" ng-model="search"
-  / button.button.button-secondary Search
 
-.cases(cases)
-  table
-    thead
-      tr
-        th Case number
-        th Defendant(s)
-        th Claimed
-        th Assessed
-        th Status
-        th Date submitted
-        th Messages
-    tbody
-      - cases.each do |c|
-        tr
-          td = link_to c['case_number'], "/claims/#{c['id']}.html"
-          td
-            => c['defendants'][0...2].join(',<br>')
-            - if c['defendants'].count > 2
-              .more = link_to "and #{c['defendants'].count - 2} more"
-          td = c['amount_claimed']
-          td = c['amount_assessed']
-          td: span.case-status class="#{c['state']}" = c['status']
-          td = c['date_submitted']
-          td.case-messages
-            - if c['message_count'] > 0
-              => link_to pluralize(c['message_count'], 'message'), "/claims/#{c['id']}.html#claim"
-            - else
-              | —
+cases

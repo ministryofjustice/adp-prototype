@@ -1,0 +1,12 @@
+.messages
+  ul.messages-screen ng-if="messages.length"
+    li.messages-message ng-repeat="message in messages" class="{{message.author_type}}"
+      .message-body {{ message.body }}
+      .message-meta
+        .message-author {{ message.author }} ({{message.author_type}})
+        .message-date {{ message.created_at }}
+  .messages-screen ng-if="!messages.length"
+    h3 No messages
+
+  form.messages-input ng-submit="postMessage()"
+    input.form-control placeholder="Enter your message here" ng-model="newMessage"

@@ -5,10 +5,10 @@ source 'https://rubygems.org'
 gem "middleman", "~>3.4.0"
 
 gem 'pry'
-
 gem "foreman"
-
 gem 'slim'
+
+gem 'middleman-deploy'
 
 # Live-reloading plugin
 gem "middleman-livereload", github: 'middleman/middleman-livereload'

@@ -48,3 +48,11 @@
     padding: .4em .7em .3em;
   }
 }
+
+.js-enabled .tab-panel:not(.active) {
+  display: none;
+}
+
+.tab-panel {
+  animation: reveal 800ms;
+}

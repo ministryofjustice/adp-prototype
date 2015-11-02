@@ -51,12 +51,22 @@ helpers do
   end
 
   def get_full_name(list)
-    list.map {|d| "#{d['first_name']} #{d['last_name']}" }
+    list.map {|i| "#{i['first_name']} #{i['last_name']}" }
   end
 
   def get_defendants(case_id)
     defendants = data.defendants.select {|d| d.claim_id == case_id }
     get_full_name(defendants)
+  end
+
+  def get_advocates(claim)
+    users = data.users.select do |u|
+      u.persona_id == claim.advocate_id && u.persona_type == 'Advocate'
+    end.map do |u|
+      {
+        name: "#{u.first_name} #{u.last_name}"
+      }
+    end
   end
 
   def local_data(path)
@@ -133,4 +143,8 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :deploy do |deploy|
+  deploy.method = :git
 end

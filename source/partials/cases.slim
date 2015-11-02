@@ -1,5 +1,5 @@
 .cases
-  table
+  table ng-if="(cases | filter: search).length"
     thead
       tr
         th Case number
@@ -21,3 +21,5 @@
           = link_to '/claims/{{ case.id }}.html#claim' do
             ng-pluralize count="case.message_count" when="{ '1': '{} message', 'other': '{} messages'}"
         td.case-messages ng-if="case.message_count == 0" —
+
+  h4 ng-if="!(cases | filter: search).length" No results

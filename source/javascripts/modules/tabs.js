@@ -8,18 +8,14 @@ Mojular.Modules.Tabs = {
     this.cacheEls();
     this.bindEvents();
 
-    var $panels = this.$tabs
-      .filter(function() {
-        return !$(this).is('.active')
-      })
-      .find('a')
-      .map(function() { return this.href.split('#')[1] })
-      .map(function(i, id) {
-        return $('#' + id);
-      });
+    this.toggleTab(this.$tabs.filter('.active'));
+  },
 
-    $panels.each(function() {
-      $(this).hide();
+  bindEvents: function() {
+    var _this = this;
+    $('.tabs .tab > a').on('click', function(e) {
+      e.preventDefault();
+      _this.toggleTab($(this).parent());
     });
   },
 
@@ -30,26 +26,18 @@ Mojular.Modules.Tabs = {
     $tab
       .addClass('active');
 
-    var activePanelId = $tab.find('a').attr('href').split('#')[1];
-
     this.$panels.hide();
-    $('#' + activePanelId).show();
-  },
 
-  bindEvents: function() {
-    var _this = this;
-    $('.tabs').on('click', function(e) {
-      e.preventDefault();
-      var $tab = $(e.target).parent();
+    if($tab.length < 1) {
+      return;
+    }
 
-      if($tab.is('.tab')) {
-        _this.toggleTab($tab);
-      }
-    });
+    var activePanelId = $tab.find('a').attr('href').split('#')[1];
+    $('#' + activePanelId).addClass('active').show();
   },
 
   cacheEls: function() {
     this.$tabs = $(this.el);
     this.$panels = $('.tab-panel');
   }
-}
+};

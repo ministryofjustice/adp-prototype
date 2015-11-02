@@ -7,6 +7,7 @@
     id: c.id,
     case_number: c.case_number,
     defendants: defendants,
+    advocates: get_advocates(c),
     amount_claimed: number_to_currency(c.total + c.vat_amount, unit: '£'),
     amount_assessed: number_to_currency(amount_assessed, unit: '£'),
     state: c.state,
