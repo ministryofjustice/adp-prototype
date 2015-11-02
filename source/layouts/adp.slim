@@ -10,7 +10,7 @@
 
   .global-nav
     ul.global-nav-menu
-      li class="#{current_page.data.section == 'claims' ? 'active' : nil}" = link_to 'Your claims', '/'
+      li class="#{current_page.data.section == 'claims' ? 'active' : nil}" = link_to 'Your claims', '/index.html'
       li class="#{current_page.data.section == 'archive' ? 'active' : nil}" = link_to 'Archive', '/archive.html'
       li class="#{current_page.data.section == 'start-claim' ? 'active' : nil}" = link_to 'Start claim', '/start-claim.html'
       li class="#{current_page.data.section == 'manage' ? 'active' : nil}" = link_to 'Manage', '/manage.html'
@@ -20,3 +20,6 @@
       li = link_to 'Sign out'
 
   = yield
+
+  javascript:
+    window.BASE_PATH = "#{url_for('/index.html')}";

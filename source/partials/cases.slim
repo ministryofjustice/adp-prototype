@@ -11,7 +11,7 @@
         th Messages
     tbody
       tr ng-repeat="case in cases | filter: search"
-        td = link_to '{{ case.case_number }}', "/claims/{{ case.id }}.html"
+        td = link_to '{{ case.case_number }}', "claims/{{ case.id }}.html"
         td {{ case.defendants.join(', ') }}
         td {{ case.amount_claimed }}
         td {{ case.amount_assessed }}
