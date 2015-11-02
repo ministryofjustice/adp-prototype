@@ -1,0 +1,30 @@
+h2 Basic info
+
+table
+  tr
+    th Case number
+    td = case_number
+  tr
+    th Offence
+    td = match_from_collection(offence_id, :id, data.offences).first.description
+  tr
+    th Case type
+    td = match_from_collection(case_type_id, :id, data.case_types).first.name
+  tr
+    th Advocate category
+    td = advocate_category
+  tr
+    th First day of trial
+    td = first_day_of_trial
+  tr
+    th Trial concluded
+    td = trial_concluded_at
+  tr
+    th Estimated trial length
+    td = pluralize(estimated_trial_length, 'day')
+  tr
+    th Actual trial length
+    td = pluralize(actual_trial_length, 'day')
+  tr
+    th Court
+    td = match_from_collection(court_id, :id, data.courts).first.name

@@ -40,10 +40,10 @@ section: claim
         messages
 
       .tab-panel#basic-info
-        h1 Basic info
+        = partial 'basic-info', locals: claim
 
       .tab-panel#fees-expenses
-        h1 Fees & expenses
+        h2 Fees & expenses
 
     .column-third.case-details
       h3.case-details-title Details

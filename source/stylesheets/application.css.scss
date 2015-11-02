@@ -19,3 +19,10 @@
     opacity: 1;
   }
 }
+
+table tr:nth-child(even) {
+  th,
+  td {
+    background: $grey-4;
+  }
+}
