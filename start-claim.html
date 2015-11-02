@@ -7,10 +7,10 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>(function(d){d.className=d.className.replace(/\bno-js\b/,'js-enabled')})(document.documentElement);</script>
-      <link href="/stylesheets/application.css" rel="stylesheet" media="all" />
+      <link href="stylesheets/application.css" rel="stylesheet" media="all" />
     
     <!--[if lt IE 9]>
-      <script src="/javascripts/polyfills.bundle.js"></script>
+      <script src="javascripts/polyfills.bundle.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -30,7 +30,7 @@
           </div>
             <div class="header-branding">
               <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" class="header-logo">
-                <img src="/images/crown-logo-black-2x.png" />
+                <img src="images/crown-logo-black-2x.png" />
                 <span>GOV.UK</span>
               </a>
             </div>
@@ -62,16 +62,16 @@
 <div class="global-nav">
   <ul class="global-nav-menu">
     <li>
-      <a href="/">Your claims</a>
+      <a href="./">Your claims</a>
     </li>
     <li>
-      <a href="/archive.html">Archive</a>
+      <a href="archive.html">Archive</a>
     </li>
     <li class="active">
-      <a href="/start-claim.html">Start claim</a>
+      <a href="start-claim.html">Start claim</a>
     </li>
     <li>
-      <a href="/manage.html">Manage</a>
+      <a href="manage.html">Manage</a>
     </li>
   </ul>
   <ul class="global-nav-user">
@@ -88,6 +88,9 @@
     Claim for advocate graduated fees
   </h1>
 </div>
+<script>
+  window.BASE_PATH = "./";
+</script>
       </div>
     </main>
 
@@ -121,6 +124,7 @@
       </div>
     </footer>
 
-    <script src="/javascripts/app.bundle.js"></script>
+    <script src="javascripts/app.bundle.js"></script>
   </body>
 </html>
+

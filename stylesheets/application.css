@@ -318,8 +318,8 @@ body {
     font-size: 30px;
     padding: 1px 0 3px 1.42105em;
     outline: 0;
-    background: url("/images/crown-logo-white.png") no-repeat 0 2px;
-    background: url("/images/crown-logo-white-2x.png") no-repeat 0 2px/35px;
+    background: url("../images/crown-logo-white.png") no-repeat 0 2px;
+    background: url("../images/crown-logo-white-2x.png") no-repeat 0 2px/35px;
     background-size: 1.15em;
     border-bottom: 1px solid transparent; }
     /* line 50, /Users/tyom/Dropbox/Code/MoJ/adp-proto/node_modules/mojular-govuk-elements/assets/sass/govuk/elements/_global-header.scss */
@@ -463,8 +463,8 @@ body {
     height: 17px;
     width: 41px;
     float: left;
-    background: url("/images/open-government-licence.png") no-repeat 0 0;
-    background: url("/images/open-government-licence-2x.png") no-repeat 0 0/41px 17px;
+    background: url("../images/open-government-licence.png") no-repeat 0 0;
+    background: url("../images/open-government-licence-2x.png") no-repeat 0 0/41px 17px;
     margin-left: -50px; }
   /* line 61, /Users/tyom/Dropbox/Code/MoJ/adp-proto/node_modules/mojular-govuk-elements/assets/sass/govuk/elements/_global-footer.scss */
   .global-footer .copyright {
@@ -475,7 +475,7 @@ body {
       display: inline-block;
       padding-top: 120px;
       width: 145px;
-      background: url("/images/govuk-crest.png") no-repeat 50% 10px;
+      background: url("../images/govuk-crest.png") no-repeat 50% 10px;
       text-align: center;
       text-decoration: none; }
     @media (max-width: 639px) {
@@ -767,7 +767,7 @@ select.form-control {
   .button:link, .button:visited {
     color: white;
     text-decoration: none;
-    background: #00823b; }
+    background-color: #00823b; }
   /* line 30, /Users/tyom/Dropbox/Code/MoJ/adp-proto/node_modules/mojular-govuk-elements/assets/sass/govuk/elements/_buttons.scss */
   .button:active {
     border-color: transparent;
@@ -807,7 +807,7 @@ select.form-control {
   font-weight: 700;
   font-size: 1.26316em;
   padding: 0.42105em 2.10526em 0.26316em 1.05263em;
-  background-image: url("/images/icon-pointer-2x.png");
+  background-image: url("../images/icon-pointer-2x.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: 30px 19px; }

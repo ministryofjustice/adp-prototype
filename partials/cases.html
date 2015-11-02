@@ -28,7 +28,7 @@
     <tbody>
       <tr ng-repeat="case in cases | filter: search">
         <td>
-          <a href="/claims/{{ case.id }}.html">{{ case.case_number }}</a>
+          <a href="claims/{{ case.id }}.html">{{ case.case_number }}</a>
         </td>
         <td>
           {{ case.defendants.join(', ') }}
