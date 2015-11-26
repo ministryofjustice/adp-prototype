@@ -9,11 +9,6 @@ module.exports = {
     path: './source/javascripts',
     filename: '[name].bundle.js'
   },
-  module: {
-    loaders: [
-      { include: /\.json$/, loaders: ['json-loader'] }
-    ]
-  },
   resolve: {
     modulesDirectories: [
       'node_modules',
