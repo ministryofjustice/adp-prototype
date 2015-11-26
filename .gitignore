@@ -18,3 +18,5 @@
 .DS_Store
 node_modules/
 *.bundle.js
+source/layouts/base.erb
+source/layouts/internal.erb

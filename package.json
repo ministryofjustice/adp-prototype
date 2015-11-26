@@ -2,10 +2,9 @@
   "name": "adp-proto",
   "dependencies": {
     "angular": "^1.4.7",
-    "mojular": "mojular/mojular",
-    "mojular-govuk-elements": "mojular/govuk-elements",
-    "mojular-moj-elements": "mojular/moj-elements",
-    "mojular-templates": "mojular/templates"
+    "mojular": "^0.2",
+    "mojular-govuk-elements": "mojular/govuk-elements#0.2.3",
+    "mojular-moj-elements": "mojular/moj-elements#0.2.1"
   },
   "devDependencies": {
     "webpack": "^1.12.2"

@@ -1,7 +1,7 @@
 require('mojular');
 var $ = require('jquery');
 
-Mojular.Modules.CustomiseFileUpload = {
+exports.CustomiseFileUpload = {
   el: 'input:file',
 
 	init: function() {

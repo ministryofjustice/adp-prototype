@@ -1,12 +1,14 @@
 var angular = require('angular');
 var $ = require('jquery');
 
-require('mojular');
-require('mojular-moj-elements/assets/scripts/modules/skip-to-content');
-require('./modules/file-upload');
-require('./modules/tabs');
-
-Mojular.init();
+require('mojular')
+  .use([
+    require('mojular-govuk-elements'),
+    require('mojular-moj-elements'),
+    require('./modules/file-upload'),
+    require('./modules/tabs')
+  ])
+  .init();
 
 var app = angular.module('adp', []);
 

@@ -1,7 +1,7 @@
 require('mojular');
 var $ = require('jquery');
 
-Mojular.Modules.Tabs = {
+exports.Tabs = {
   el: '.tabs .tab',
 
   init: function() {

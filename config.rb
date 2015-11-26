@@ -98,16 +98,16 @@ configure :development do
   activate :livereload, ignore: [/source\/images\//]
 end
 
-# Load Sass paths
-govuk_elements_path = File.join(root, 'node_modules/mojular-govuk-elements')
-JSON.parse(IO.read("#{govuk_elements_path}/package.json"))['paths']['sass'].each do |p|
-  Sass.load_paths << File.expand_path("#{govuk_elements_path}/#{p}")
+# Load Sass paths and copy images & layouts
+require 'find'
+`mkdir -p "#{config.source}/#{config.images_dir}" "#{config.source}/#{config.layouts_dir}"`
+Find.find('node_modules').grep(/mojular[a-z-]+\/package\.json/).map do |package|
+  sassPaths = JSON.parse(IO.read(package))['sassPaths']
+  dirname = File.dirname(package)
+  sassPaths.map { |path| Sass.load_paths << File.expand_path(path, File.directory?(path) ? '' : dirname) } if sassPaths
+  FileUtils.cp_r Find.find(dirname).grep(/images\//), "#{config.source}/#{config.images_dir}"
+  FileUtils.cp_r Find.find(dirname).grep(/layouts\/erb\//), "#{config.source}/#{config.layouts_dir}"
 end
-
-# Copy layouts
-`mkdir -p source/layouts && cp #{root}/node_modules/mojular-templates/layouts/erb/* source/layouts`
-# Copy images
-`mkdir -p source/images && cp #{govuk_elements_path}/assets/images/* source/images`
 
 set :layout, 'adp'
 
